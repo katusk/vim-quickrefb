@@ -1,0 +1,13161 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+% http://tex.stackexchange.com/questions/73652/why-is-textvisiblespace-represented-by-a-rectangle
+\def\textvisiblespace{%
+   \mbox{\kern.06em\vrule height.5ex}%
+   \vbox{\hrule width.6em}%
+   \hbox{\vrule height.5ex}}
+%\newsavebox{\textvisiblespacebox}
+%\begin{lrbox}{\textvisiblespacebox}\textvisiblespace\end{lrbox}
+% Insert font-related changes here
+%\def\textvisiblespace{\usebox{\textvisiblespacebox}}
+
+\usepackage{multicol}
+\usepackage{marginnote}
+\usepackage{ragged2e}
+\usepackage{titling}
+\usepackage{setspace}
+\usepackage[compact]{titlesec}
+\usepackage[os=win]{menukeys}
+\usepackage{hyphenat}
+\usepackage[activate={true,nocompatibility}, protrusion=true, auto=true, final, babel=true]{microtype}
+%% shrink=40, letterspace=500, final, draft
+%%\usepackage[respective]{microtype}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+\hyphenation{fi-le-ty-pe-plu-gin ex-pres-sion-syn-tax im-proved}
+\setlist{nosep,leftmargin=*}
+\renewcommand{\headrulewidth}{0pt}
+\end_preamble
+\use_default_options true
+\begin_modules
+fix-cm
+fixltx2e
+logicalmkup
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman Cambria
+\font_sans Calibri
+\font_typewriter Consolas
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\use_refstyle 1
+\branch Hide
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.61cm
+\topmargin 1.45cm
+\rightmargin 2.61cm
+\bottommargin 1.35cm
+\headsep 0.5cm
+\footskip 0.8cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "aboveskip={0.0cm},basicstyle={\ttfamily},belowskip={0.0cm},framexleftmargin={0.0cm},tabsize=4,xleftmargin={0.0cm},xrightmargin={0.0cm}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Document Class > Custom: showframe
+\end_layout
+
+\begin_layout Plain Layout
+
+% Render final with LuaTeX
+\end_layout
+
+\begin_layout Plain Layout
+
+% Foot skip was 0.675cm
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+droptitle}{-6em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+posttitle{
+\backslash
+par
+\backslash
+end{center}
+\backslash
+vspace{-7em}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Vim Quick Reference for Beginners
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlespacing*{
+\backslash
+section}{0pt}{*1.6}{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlespacing*{
+\backslash
+subsection}{0pt}{*1.55}{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlespacing*{
+\backslash
+subsubsection}{0pt}{*1.5}{0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{0.4cm} % 0.6cm % 0.43cm
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+columnseprule}{0.5pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewmenumacro{
+\backslash
+keys}[-]{roundedkeys}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+changemenuelement{roundedkeys}{sep}{$-$}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+changemenuelement{roundedkeys}{sep}{-}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+marginparpush}{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+marginparsep4pt
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+marginparwidth}{2.04cm} % 2.243cm
+\end_layout
+
+\begin_layout Plain Layout
+
+% http://tex.stackexchange.com/questions/56123/aligning-margin-note-with-line-spac
+ing-different-from-main-text
+\end_layout
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+justifying
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+raggedleftmarginnote}{} 
+\backslash
+renewcommand*{
+\backslash
+raggedrightmarginnote}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand*{
+\backslash
+raggedleftmarginnote}{
+\backslash
+RaggedLeft} %
+\backslash
+renewcommand*{
+\backslash
+raggedrightmarginnote}{
+\backslash
+RaggedRight}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand
+\backslash
+Marginnote[1]{
+\backslash
+marginnote{
+\backslash
+begin{spacing}{0.57}{
+\backslash
+scriptsize
+\backslash
+hspace{0pt}#1}
+\backslash
+end{spacing}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+tolerance=9999 
+\backslash
+fussy
+\end_layout
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+newcommand
+\backslash
+Marginnote[1]{
+\backslash
+marginnote{{
+\backslash
+scriptsize
+\backslash
+hspace{0pt}
+\backslash
+setstretch{0.57}#1}}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+hyphenpenalty=51
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+tolerance=1000
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+linepenalty=0
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+exhyphenpenalty=0
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+clubpenalty=0
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+widowpenalty=0
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+brokenpenalty=0
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+doublehyphendemerits=0
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+finalhyphendemerits=0
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+adjdemerits=0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+frenchspacing
+\backslash
+lefthyphenmin2
+\backslash
+righthyphenmin2
+\backslash
+sloppy
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+tolerance
+\backslash
+multicoltolerance 
+\backslash
+pretolerance
+\backslash
+multicolpretolerance
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+tolerance=9999 % 
+\backslash
+fussy: 200, 
+\backslash
+sloppy: 10000
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{fancy}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhead[LH]{
+\backslash
+emph{Vim Quick Reference for Beginners}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+reversemarginpar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Getting Started
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:set nocp} 
+\backslash
+
+\backslash
+ 
+\backslash
+mbox{
+\backslash
+emph{:set nocompatible}}
+\backslash
+
+\backslash
+
+\backslash
+emph{
+\backslash
+$ vim -N filename}
+\backslash
+
+\backslash
+
+\backslash
+emph{
+\backslash
+$ ls | vim -}
+\backslash
+
+\backslash
+
+\backslash
+emph{
+\backslash
+$ man vim}}[-32pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+$ 
+\series bold
+vimtutor
+\series default
+ · Tutorial for basic Vim functionality.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:help} 
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:help navigation} 
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:help 
+\backslash
+^{}b} 
+\backslash
+
+\backslash
+  
+\backslash
+emph{:help holy-grail} }[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:h[elp]
+\series default
+ 
+\emph on
+{subject}
+\emph default
+ · Wildcards: 
+\begin_inset Quotes eld
+\end_inset
+
+*
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+?
+\begin_inset Quotes erd
+\end_inset
+
+, and 
+\begin_inset Quotes eld
+\end_inset
+
+[a-z]
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:q
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+:q!
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+:wq
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+ZZ
+\series default
+ · Various ways to 
+\bar under
+q
+\bar default
+uit.
+ See help.
+
+\series bold
+ 
+\begin_inset Branch Hide
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+:wq
+\begin_inset space \enskip{}
+\end_inset
+
+ZZ
+\begin_inset space \enskip{}
+\end_inset
+
+:q
+\begin_inset space \enskip{}
+\end_inset
+
+:q!
+\series default
+ · Various ways to 
+\bar under
+q
+\bar default
+uit.
+ See help.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Navigation Fundamentals
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{h}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+ characters to the left.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{l}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+ characters to the right.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{k}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+ lines upward 
+\family sans
+linewise
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{j}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+ lines downward 
+\family sans
+linewise
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-f}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Scroll 
+\emph on
+[count]
+\emph default
+ pages 
+\bar under
+f
+\bar default
+orwards.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-b}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Scroll 
+\emph on
+[count]
+\emph default
+ pages 
+\bar under
+b
+\bar default
+ackwards.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{A 
+\backslash
+textbf{word} consists of a sequence of letters, digits, and underscores;
+ or a sequence of other non
+\backslash
+hyp{}blank characters, separated with white space.}[-46pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{w}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+ 
+\series bold
+\bar under
+w
+\bar default
+ords
+\series default
+ forward.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{b}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+ 
+\series bold
+words
+\series default
+ 
+\bar under
+b
+\bar default
+ackward.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{A 
+\backslash
+textbf{
+\backslash
+noun{word}} consists of a sequence of non
+\backslash
+hyp{}blank characters, separated with white space.}[-18pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{W}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+ 
+\series bold
+\bar under
+\noun on
+W
+\bar default
+ords
+\series default
+\noun default
+ forward.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{B}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+ 
+\series bold
+\noun on
+words
+\series default
+\noun default
+ 
+\bar under
+B
+\bar default
+ackward.
+\end_layout
+
+\begin_layout Section*
+Introduction to Modes
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:h vim-modes} 
+\backslash
+
+\backslash
+ 
+\backslash
+mbox{
+\backslash
+emph{:h mode-switching}} }[-32pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{If you start the editor, you are in 
+\backslash
+textbf{Normal mode}; unless you have set the 
+\backslash
+nohyphens{'insertmode'} option.
+ Normal mode is also known as 
+\backslash
+emph{command mode}.
+ Hint: check out the 
+\backslash
+nohyphens{'showmode'} option.}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+esc}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-c}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Switch back to 
+\series bold
+Normal mode
+\series default
+ for the entry of all the normal editor commands.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+enskip{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Hint for 
+\backslash
+textbf{Insert mode}: see 
+\backslash
+nohyphens{'virtualedit'} for moving the cursor to positions where there
+ is no character.
+ Useful for editing a table.}[32pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{Insert}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{i}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Switch to 
+\series bold
+Insert mode
+\series default
+, and 
+\bar under
+i
+\bar default
+nsert text before the cursor 
+\emph on
+[count]
+\emph default
+ times.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{a}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Switch to Insert mode, and 
+\bar under
+a
+\bar default
+ppend text after the cursor 
+\emph on
+[count]
+\emph default
+ times.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+["x]
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{c}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{motion}
+\emph default
+ · Delete 
+\emph on
+{motion}
+\emph default
+ text 
+\emph on
+[into register x]
+\emph default
+ and start insert; i.e.
+ 
+\bar under
+c
+\bar default
+hange.
+ Also see 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+:set cpo+=$
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+["x]
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{s}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Delete 
+\emph on
+[count]
+\emph default
+ characters 
+\emph on
+[into register x]
+\emph default
+ and start insert; i.e.
+ 
+\bar under
+s
+\bar default
+ubstitute.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{In 
+\backslash
+textbf{Command-line mode}, you can enter one line of text at the bottom
+ of the window.
+ Also called 
+\backslash
+emph{Cmdline mode}.}[-19.5pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{:}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{/}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{?}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{!}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Switch to 
+\series bold
+Command-line mode
+\series default
+ for the 
+\begin_inset Quotes eld
+\end_inset
+
+:
+\begin_inset Quotes erd
+\end_inset
+
+ Ex commands, the 
+\begin_inset Quotes eld
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+?
+\begin_inset Quotes erd
+\end_inset
+
+ pattern search commands, and the 
+\begin_inset Quotes eld
+\end_inset
+
+!
+\begin_inset Quotes erd
+\end_inset
+
+ filter command.
+\end_layout
+
+\begin_layout Section*
+More on Help
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:tags} 
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:[count]po[p][!]} 
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:[count]ta[g][!]} }[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-]}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Jump to the 
+\emph on
+[count]
+\emph default
+ definition of the keyword under the cursor.
+ Also see 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+:tag
+\series default
+ 
+\emph on
+{ident}
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Also 
+\backslash
+emph{:pop}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-t}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Jump to 
+\emph on
+[count]
+\emph default
+ older entry in 
+\bar under
+t
+\bar default
+ag stack.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:syntax on} 
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:map <F11> <C-]>} }[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:h
+\series default
+ :buffers
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+:h
+\series default
+ i_^a
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+:h
+\series default
+ v_u
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+:h
+\series default
+ /
+\backslash
+r
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+:h
+\series default
+ 'hls'
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+:h
+\series default
+ -o
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{{
+\backslash
+RaggedRight Also see 
+\backslash
+nohyphens{'wildmenu'} option.}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:h
+\series default
+ change 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-d}
+\end_layout
+
+\end_inset
+
+
+\series default
+ 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+tab}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · List all topics that contain 
+\begin_inset Quotes eld
+\end_inset
+
+change
+\begin_inset Quotes erd
+\end_inset
+
+, then scroll to next topic.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Also see 
+\backslash
+textsf{quickfix} commands, e.g.
+ 
+\backslash
+emph{:cnext}, 
+\backslash
+emph{:cwindow.} }[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:helpg[rep]
+\series default
+ 
+\emph on
+{pattern}
+\emph default
+ 
+\emph on
+[@xx]
+\emph default
+ · Jump to the first match within one line in the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+xx
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ language.
+\end_layout
+
+\begin_layout Section*
+Simple Undo
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{
+\backslash
+mbox{undo
+\backslash
+hyp{}commands}} for detailed Vi compatibility.}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{u}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+u
+\bar default
+ndo 
+\emph on
+[count]
+\emph default
+ changes.
+ 
+\emph on
+{Vi: only one level}
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-r}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+r
+\bar default
+edo 
+\emph on
+[count]
+\emph default
+ changes which were undone.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{U}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+U
+\bar default
+ndo all latest changes on one line.
+\end_layout
+
+\begin_layout Section*
+Visual Mode Basics
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+normalmarginpar
+\backslash
+Marginnote{The movement commands extend a highlighted area.
+ When a non-movement command is used, it is executed for the highlighted
+ area.}[-30pt] %[-30pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{v}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{V}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+|
+\series bold
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-v}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Start 
+\series bold
+\bar under
+V
+\bar default
+isual mode
+\series default
+: per character | linewise | blockwise.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{v}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Start Visual with the same area as the previous area and the same mode.
+ In Visual, the current and the previous Visual area are exchanged.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ After using 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{p}
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{P}
+\end_layout
+
+\end_inset
+
+ in Visual mode, the text, that was put, will be selected.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{simple-change}.
+ The following are 
+\backslash
+emph{
+\backslash
+{not in Vi
+\backslash
+}}.}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+{Visual}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+textasciitilde{}}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Switch case of highlighted text.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+{Visual}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{U}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Make highlighted text 
+\bar under
+U
+\bar default
+ppercase.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+{Visual}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{u}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Make highlighted text lowercase.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{
+\backslash
+{Visual
+\backslash
+}}
+\backslash
+,
+\backslash
+textbf{
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{?}} · Rot13 encode the highlighted text.}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+{Visual}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+[count]
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{>}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Shift the highlighted lines 
+\emph on
+[count]
+\emph default
+ 'shiftwidth' rightwards.
+\end_layout
+
+\begin_layout Section*
+Glance on Map, Recording, Mark
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See topics
+\backslash
+
+\backslash
+
+\backslash
+textsf{map-commands},
+\backslash
+
+\backslash
+
+\backslash
+textsf{recording},
+\backslash
+
+\backslash
+
+\backslash
+textsf{mark-motions}.}[-30pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Try 
+\backslash
+emph{"gqap"} and 
+\backslash
+emph{":map <F3> gqap"}.
+ See 
+\backslash
+emph{":h keycodes"}.}[4pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:map
+\series default
+ 
+\emph on
+{lhs}
+\emph default
+ 
+\emph on
+{rhs} 
+\emph default
+| 
+\series bold
+:im[ap]
+\series default
+ 
+\emph on
+{lhs}
+\emph default
+ 
+\emph on
+{rhs}
+\emph default
+ · Map the key sequence 
+\emph on
+{lhs}
+\emph default
+ to 
+\emph on
+{rhs}
+\emph default
+ for the modes where the map command applies.
+ The result is recursively scanned.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{.}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Repeat last change, with count replaced with 
+\emph on
+[count]
+\emph default
+.
+ See 
+\family sans
+repeating
+\family default
+ and 
+\family sans
+single-repeat
+\family default
+ topics.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{
+\backslash
+{Vi: no recording, only named registers
+\backslash
+}} }[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{q}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{0-9a-zA-Z"}
+\emph default
+ · Record typed characters into register (uppercase to append); 
+\emph on
+q
+\emph default
+ stops recording.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Try 
+\backslash
+emph{"qa
+\backslash
+,gqap
+\backslash
+,q"}
+\backslash
+
+\backslash
+and 
+\backslash
+emph{"@a"}.}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{@}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{0-9a-z".=*}
+\emph default
+ · Execute the contents of register 
+\emph on
+[count]
+\emph default
+ times.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{m}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{a-zA-Z}
+\emph default
+ · Set 
+\family sans
+mark
+\family default
+ 
+\emph on
+{a-zA-Z}
+\emph default
+ at cursor position.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{'}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{a-z}
+\emph default
+ | 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+`{}}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{a-z}
+\emph default
+ · Jump to the mark 
+\emph on
+{a-z}
+\emph default
+ in the current buffer.
+
+\series bold
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{'}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{A-Z0-9}
+\emph default
+ | 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+`{}}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{A-Z0-9}
+\emph default
+ · To the mark {A-Z0-9} in the file where it was set 
+\emph on
+{not in Vi}.
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+textquotesingle{} or 
+\backslash
+'{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Extra: for multiple tabs see 
+\backslash
+textsf{tabpage}, and 
+\backslash
+emph{:e} | 
+\backslash
+emph{-p} | 
+\backslash
+emph{gt} | 
+\backslash
+emph{gT} }[-64pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:h vi
+\backslash
+_diff} 
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:h vim-additions}
+\backslash
+
+\backslash
+'guifont' 
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:h evim} 
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:h evim-keys}}[-36pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:marks
+\series default
+ · List all the current marks.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Section*
+Files and Buffers
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Inserting a File}
+\backslash
+
+\backslash
+See 
+\backslash
+textsf{inserting-file}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+{range}
+\series bold
+\emph default
+r[ead]
+\series default
+ 
+\emph on
+[++opt]
+\emph default
+ 
+\emph on
+[name]
+\emph default
+ · Insert the file 
+\emph on
+[name]
+\emph default
+ below the specified line.
+ Try 
+\begin_inset Quotes eld
+\end_inset
+
+:0r 
+\emph on
+[name]
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textbf{Buffers}
+\backslash
+
+\backslash
+See 
+\backslash
+textsf{arglist}
+\backslash
+
+\backslash
+
+\backslash
+textsf{buffer-list}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[count]
+\series bold
+\emph default
+n[ext]
+\series default
+ 
+\emph on
+[++opt]
+\emph default
+ 
+\emph on
+[+cmd]
+\emph default
+ · Edit 
+\emph on
+[count]
+\emph default
+ 
+\bar under
+n
+\bar default
+ext file 
+\emph on
+{Vi: no count or ++opt}
+\emph default
+.
+ Force next is 
+\begin_inset Quotes eld
+\end_inset
+
+:n!
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Also see 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+:prev[ious][!]
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+, and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+:rew[ind][!]
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+:fir[st][!]
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:buffers[!]
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+:ls[!]
+\series default
+ · Show all 
+\bar under
+buffers
+\bar default
+.
+ If 
+\begin_inset Quotes eld
+\end_inset
+
+!
+\begin_inset Quotes erd
+\end_inset
+
+ is included, then show even normally unlisted buffers.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:ar[gs]
+\series default
+ · Print the 
+\bar under
+ar
+\bar default
+gument list; current file in [
+\begin_inset space ~
+\end_inset
+
+].
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Mostly the 
+\backslash
+emph{alternate file} is the previously edited file.
+ See 
+\backslash
+textsf{alternate-file}}[-32pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-
+\backslash
+^{}}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+:e
+\series default
+ #
+\series bold
+ 
+\series default
+· Edit the 
+\emph on
+alternate file
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textbf{Write 
+\backslash
+&{} Quit}
+\backslash
+
+\backslash
+See 
+\backslash
+textsf{write-quit},
+\backslash
+
+\backslash
+
+\backslash
+textsf{writing}, 'cpoptions'}[-12pt] % save-file
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ZZ
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+:x
+\series default
+ · Write current file, if modified, and quit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{See 
+\backslash
+textsf{:range}; e.g.
+ "." is the current line.
+ Add write perm.:
+\backslash
+
+\backslash
+
+\backslash
+mbox{ 
+\backslash
+emph{:!chmod u+w 
+\backslash
+%} }}[-2pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:w[rite]
+\series default
+ 
+\emph on
+[++opt]
+\emph default
+ · 
+\bar under
+w
+\bar default
+rite the whole buffer to the current file.
+ Force write 'readonly' with 
+\begin_inset Quotes eld
+\end_inset
+
+!
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Opt.
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+[range]
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[range]
+\series bold
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+w[rite][!]
+\series default
+ 
+\emph on
+[++opt]
+\emph default
+ 
+\series bold
+>>
+\series default
+ 
+\emph on
+{file}
+\emph default
+ · Append to file.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[range]
+\series bold
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+x[it][!]
+\series default
+ 
+\emph on
+[++opt]
+\emph default
+ 
+\emph on
+[file]
+\emph default
+ · Like ":wq", but write only when changes have been made.
+ Check 'hidden'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{You can combine these commands, e.g.
+ ":wq", ":wq!", ":xn", or ":wqa".
+ Also see 'showcmd'.}[-38pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:q[uit]
+\series default
+ · 
+\bar under
+q
+\bar default
+uit current window.
+ Force quit with 
+\begin_inset Quotes eld
+\end_inset
+
+!
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Use ":bmod" to go to the next modified buffer.}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:qa[ll]
+\series default
+ · Exit, unless there are changed buffers.
+ Force exit with 
+\begin_inset Quotes eld
+\end_inset
+
+!
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Check 'autowriteall'.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Section*
+More on Insert Mode
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{insert
+\backslash
+
+\backslash
+inserting}}[-30pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Switch to Insert}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{A}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+A
+\bar default
+ppend text at the end of the line 
+\emph on
+[count]
+\emph default
+ times.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{I}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+I
+\bar default
+nsert text before the first non-blank in the line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{
+\backslash
+{not in Vi
+\backslash
+}}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{I}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+I
+\bar default
+nsert text in column 1 
+\emph on
+[count]
+\emph default
+ times.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+reversemarginpar
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Repeat 
+\backslash
+emph{[count]} times.
+ 
+\backslash
+emph{
+\backslash
+{Vi: blank screen lines
+\backslash
+}}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{o}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+o
+\bar default
+pen a new line below the cursor, insert text.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{O}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+O
+\bar default
+pen a new line above the cursor, insert text.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Editing in Insert}
+\backslash
+
+\backslash
+See 
+\backslash
+textsf{ins-special-keys} 'backspace'
+\backslash
+
+\backslash
+'shiftwidth'
+\backslash
+
+\backslash
+'autoindent'
+\backslash
+
+\backslash
+
+\backslash
+textsf{i
+\backslash
+_{}Tab}
+\backslash
+
+\backslash
+ 
+\backslash
+textsf{<Del>}
+\backslash
+,|
+\backslash
+,
+\backslash
+textsf{:fixdel}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-a}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Insert previously inserted text.
+ 
+\emph on
+{not Vi}
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-d}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+d
+\bar default
+elete one 'shiftwidth' of indent at the start of the current line.
+ 
+\emph on
+{Vi: only after autoindent}
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-k}
+\end_layout
+
+\end_inset
+
+
+\series default
+ 
+\emph on
+{char1}
+\emph default
+ 
+\emph on
+[char2]
+\emph default
+ · Enter 
+\family sans
+digraph
+\family default
+.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{
+\backslash
+{Vi: only in indent
+\backslash
+}}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-t}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Insert a 
+\bar under
+t
+\bar default
+ab at the start of the current line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{i
+\backslash
+_{}backspacing} about joining lines.}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-u}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Delete all entered chars in c
+\bar under
+u
+\bar default
+rrent line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{i
+\backslash
+_CTRL-V
+\backslash
+_digit} for directly entering  the dec, oct, or hex value of a char.}[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-v}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Insert next non-digit literally.
+ For special keys, the terminal code is inserted.
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-w}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Delete the 
+\bar under
+w
+\bar default
+ord before the cursor.
+\end_layout
+
+\begin_layout Section*
+More on Navigation
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{navigation}}[-29pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Characterwise}
+\backslash
+
+\backslash
+
+\backslash
+textsf{left-right-motions}
+\backslash
+
+\backslash
+
+\backslash
+keys{
+\backslash
+arrowkeyleft}
+\backslash
+,
+\backslash
+keys{
+\backslash
+arrowkeydown}
+\backslash
+,
+\backslash
+keys{
+\backslash
+arrowkeyup}
+\backslash
+,
+\backslash
+keys{
+\backslash
+arrowkeyright}
+\backslash
+
+\backslash
+
+\backslash
+keys{
+\backslash
+Space}
+\backslash
+,
+\backslash
+keys{
+\backslash
+backspace}
+\backslash
+
+\backslash
+
+\backslash
+keys{h}
+\backslash
+,
+\backslash
+keys{j}
+\backslash
+,
+\backslash
+keys{k}
+\backslash
+,
+\backslash
+keys{l}
+\backslash
+
+\backslash
+Mnemonic for ASCII chars: Ctrl-h is "backspace", Ctrl-j is "newline".}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+^{}}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To the first non-blank character of the line.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{0}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To the first character of the line.
+ 
+\family sans
+exclusive
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+$}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To end of line 
+\emph on
+[count
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $-$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+1]
+\emph default
+ lines below 
+\family sans
+inclusive
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{f}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{char}
+\series bold
+\emph default
+ 
+\series default
+· 
+\bar under
+f
+\bar default
+ind 
+\emph on
+[count]
+\emph default
+'th occurrence to the right.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{F}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{char}
+\series bold
+\emph default
+ 
+\series default
+· 
+\bar under
+F
+\bar default
+ind 
+\emph on
+[count]
+\emph default
+'th occurrence to the left.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Handy with e.g.
+ "dt," cmd combo
+\backslash
+ldots{}}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{t}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{char}
+\series bold
+\emph default
+ 
+\series default
+· 
+\bar under
+t
+\bar default
+ill before 
+\emph on
+[count]
+\emph default
+'th occurrence to right.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{T}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{char}
+\series bold
+\emph default
+ 
+\series default
+· 
+\bar under
+T
+\bar default
+ill after 
+\emph on
+[count]
+\emph default
+'th occurrence to left.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textbf{
+\backslash
+keys{,}} for the opposite direction.}[-15pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{;}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Repeat latest f, t, F or T 
+\emph on
+[count]
+\emph default
+ times.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Also see: 'ruler' or 
+\backslash
+keys{
+\backslash
+ctrl-g}}[-8pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{|}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To screen column 
+\emph on
+[count]
+\emph default
+ in the current line.
+ 
+\family sans
+exclusive
+\family default
+ motion.
+ 
+\emph on
+Ceci n'est pas une pipe.
+ 
+\family sans
+\emph default
+bar
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Wordwise}
+\backslash
+
+\backslash
+
+\backslash
+textsf{word-motions}
+\backslash
+
+\backslash
+
+\backslash
+keys{w}
+\backslash
+,
+\backslash
+keys{W}
+\backslash
+,
+\backslash
+keys{b}
+\backslash
+,
+\backslash
+keys{B}}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{e}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{E}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To end of n
+\bar under
+e
+\bar default
+xt word
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\noun on
+word
+\noun default
+ 
+\emph on
+[cnt]
+\emph default
+ 
+\family sans
+inclusive
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{ge}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{gE}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To end of pr
+\bar under
+e
+\bar default
+v.
+\begin_inset space ~
+\end_inset
+
+word
+\begin_inset space \thinspace{}
+\end_inset
+
+|
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\noun on
+word
+\noun default
+ 
+\emph on
+[cnt]
+\emph default
+ 
+\family sans
+inclusive
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Linewise}
+\backslash
+
+\backslash
+
+\backslash
+textsf{up-down-motions}}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{k}
+\end_layout
+
+\end_inset
+
+
+\series default
+ 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+arrowkeyup}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-p}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{j}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+arrowkeydown}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-j}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{<NL>}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-n}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{{--}}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-m}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{<CR>}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Sentencewise}
+\backslash
+
+\backslash
+
+\backslash
+textsf{object-motions}}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{)}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{(}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· 
+\emph on
+[count]
+\emph default
+ sentences forward
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+backward.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+{}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· 
+\emph on
+[count]
+\emph default
+ paragraphs forward
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+backward.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Pagewise 
+\backslash
+& Scroll}
+\backslash
+
+\backslash
+
+\backslash
+textsf{scrolling
+\backslash
+
+\backslash
+various-motions}
+\backslash
+
+\backslash
+
+\backslash
+keys{
+\backslash
+ctrl-f} 
+\backslash
+keys{
+\backslash
+ctrl-b}}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-d}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· 'scroll' 
+\bar under
+d
+\bar default
+ownwards.
+ 'scroll' = ½ screen by default, or 
+\emph on
+[count]
+\emph default
+.
+ See 'startofline'
+\begin_inset space \enskip{}
+\end_inset
+
+
+\emph on
+{Vi behaviour}
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-e}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Scroll 
+\bar under
+e
+\bar default
+xtra 
+\emph on
+[count]
+\emph default
+ lines downwards.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-u}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· 'scroll' window 
+\bar under
+u
+\bar default
+pwards in the buffer.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-y}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Scroll window 
+\emph on
+[count]
+\emph default
+ lines upwards.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{'startofline'
+\backslash
+
+\backslash
+'scrolloff'}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{H}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To line 
+\emph on
+[count]
+\emph default
+ from top (
+\bar under
+H
+\bar default
+ome) of window on the first non-blank character 
+\family sans
+linewise
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{M}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To 
+\bar under
+M
+\bar default
+iddle line, on 1st non-blank char 
+\family sans
+linewise
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{L}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· To line 
+\emph on
+[count]
+\emph default
+ from 
+\bar under
+L
+\bar default
+ast line on the window.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{These 
+\backslash
+emph{z} commands keep the cursor on the same line, but put cursor at first
+ non-blank in the line.
+\backslash
+enspace{}
+\backslash
+textsf{scroll-cursor}}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{z}
+\backslash
+,
+\backslash
+keys{.}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Redraw, line 
+\emph on
+[count]
+\emph default
+ at center of window.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{z}
+\backslash
+,
+\backslash
+keys{<CR>}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Redraw, line 
+\emph on
+[count]
+\emph default
+ at top of window.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{z}
+\backslash
+,
+\backslash
+keys{{--}}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Redraw, line 
+\emph on
+[count]
+\emph default
+ at bottom of window.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Jumps}
+\backslash
+
+\backslash
+
+\backslash
+textsf{jump-motions various-motions}}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{G}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\family sans
+\series default
+gg
+\family default
+ · Goto line 
+\emph on
+[count]
+\emph default
+.
+ Default last
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+first line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+emph{:[range]} does not modify the 
+\backslash
+textsf{jumplist}.}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+[range]
+\emph default
+ · Set cursor on last line number in 
+\emph on
+[range]
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{'matchpairs'}[-4pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+%}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Find next item in this line after or under cursor and jump to its match.
+ Items: ([{}]), /* */, #if, etc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textsf{N
+\backslash
+%} topic.
+ 
+\backslash
+emph{
+\backslash
+{not Vi
+\backslash
+}}}[-9.5pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+{count}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+%}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to 
+\emph on
+{count}
+\emph default
+ percentage in the file.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{[}
+\backslash
+,
+\backslash
+keys{(}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{[}
+\backslash
+,
+\backslash
+keys{
+\backslash
+{}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+||
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{]}
+\backslash
+,
+\backslash
+keys{)}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{]}
+\backslash
+,
+\backslash
+keys{
+\backslash
+}}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to 
+\emph on
+[count]
+\emph default
+ previous
+\begin_inset space ~
+\end_inset
+
+||
+\begin_inset space ~
+\end_inset
+
+next unmatched '('
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+'{'
+\begin_inset space ~
+\end_inset
+
+||
+\begin_inset space ~
+\end_inset
+
+')'
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+'}'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Marks}
+\backslash
+
+\backslash
+
+\backslash
+textsf{mark-motions}
+\backslash
+
+\backslash
+
+\backslash
+keys{m}
+\backslash
+,
+\backslash
+emph{
+\backslash
+{a-zA-Z
+\backslash
+}}
+\backslash
+
+\backslash
+
+\backslash
+keys{
+\backslash
+`{}}
+\backslash
+,
+\backslash
+emph{
+\backslash
+{a-zA-Z0-9
+\backslash
+}}
+\backslash
+
+\backslash
+
+\backslash
+emph{:marks}}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+`{}}
+\backslash
+,
+\backslash
+keys{
+\backslash
+`{}}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · To the position before the latest jump, or where the last "m`" command
+ was given.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+`{}}
+\backslash
+,
+\backslash
+keys{"}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · To cursor pos when last exiting buffer.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+`{}}
+\backslash
+,
+\backslash
+keys{.}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · To pos where the last change was made.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalmarginpar
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Jump Lists}
+\backslash
+
+\backslash
+
+\backslash
+textsf{jump-motions
+\backslash
+
+\backslash
+jumplist}}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-o}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to 
+\emph on
+[count]
+\emph default
+ 
+\bar under
+o
+\bar default
+lder cursor pos in jump list.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+tab}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to 
+\emph on
+[count]
+\emph default
+ newer cursor position in jump list.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:ju[mps]
+\series default
+ · Print the 
+\bar under
+ju
+\bar default
+mp list.
+\end_layout
+
+\begin_layout Section*
+Deleting and Changing Text
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{change.txt}}[-29pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Without Motion}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{(not 
+\backslash
+textsf{linewise})}[1pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\series bold
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{C}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+C
+\bar default
+hange tail: delete line from cursor and 
+\emph on
+[count] -- 1
+\emph default
+ more lines, start insert.
+ Synonym for 
+\begin_inset Quotes eld
+\end_inset
+
+c$
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{(
+\backslash
+textsf{linewise})}[1pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{c}
+\backslash
+,
+\backslash
+keys{c}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+c
+\bar default
+hange line: delete 
+\emph on
+[count]
+\emph default
+ lines, start insert.
+ If 'autoindent' on, preserve indent of 1st line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{(not 
+\backslash
+textsf{linewise})}[1pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{D}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+D
+\bar default
+elete tail: delete line from cursor and 
+\emph on
+[count] -- 1
+\emph default
+ more lines.
+ Synonym for 
+\begin_inset Quotes eld
+\end_inset
+
+d$
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+\emph default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{d}
+\backslash
+,
+\backslash
+keys{d}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+d
+\bar default
+elete 
+\emph on
+[count]
+\emph default
+ lines 
+\emph on
+[into reg x]
+\emph default
+ 
+\family sans
+linewise
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textsf{vreplace-mode}
+\backslash
+
+\backslash
+Useful for editing a table.}[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{R}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Enter 
+\series bold
+Virtual 
+\bar under
+R
+\bar default
+eplace mode
+\series default
+ in screen space: further chars in the file never appear to move.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{J} doesn't insert any spaces.}[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{J}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+J
+\bar default
+oin 
+\emph on
+[count]
+\emph default
+ lines, with a minimum of two lines.
+ Remove the indent and insert up to two spaces.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{r}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{char}
+\emph default
+ · 
+\bar under
+r
+\bar default
+eplace the character under the cursor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textsf{Replace-mode}
+\backslash
+
+\backslash
+Appends only at the end of the line.}[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{R}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\series bold
+Enter 
+\bar under
+R
+\bar default
+eplace mode
+\series default
+.
+ The number of chars in a line stays the same until you get to the end of
+ it.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{(not 
+\backslash
+textsf{linewise})}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{s}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+s
+\bar default
+ubstitute 
+\emph on
+[count]
+\emph default
+ characters.
+ Also "cl".
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{(
+\backslash
+textsf{linewise})}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{S}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+S
+\bar default
+ubstitute 
+\emph on
+[count]
+\emph default
+ lines.
+ Synonym for "cc".
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Also "dl".}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{x}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Delete 
+\emph on
+[count]
+\emph default
+ chars under & after cursor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Also "dh".}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{X}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Delete 
+\emph on
+[count]
+\emph default
+ chars before the cursor.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{<}
+\backslash
+,
+\backslash
+keys{<}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Shift 
+\emph on
+[count]
+\emph default
+ lines 1 'shiftwidth' leftwards.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{>}
+\backslash
+,
+\backslash
+keys{>}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Shift 
+\emph on
+[cnt]
+\emph default
+ lines 1 'shiftwidth' rightwards.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{With Motion}
+\backslash
+
+\backslash
+
+\backslash
+textbf{
+\backslash
+textsf{inclusive
+\backslash
+enspace{}exclusive}}
+\backslash
+
+\backslash
+Mark jumps, and search commands can be also used.
+ E.g.
+ 
+\backslash
+emph{d/Win[a-z]*
+\backslash
+textbackslash{}.c}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\series bold
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{c}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{motion}
+\emph default
+ · 
+\bar under
+c
+\bar default
+hange: delete text, start insert.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[
+\begin_inset Quotes eld
+\end_inset
+
+x]
+\series bold
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{d}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{motion}
+\emph default
+ · 
+\bar under
+d
+\bar default
+elete text that 
+\emph on
+{mtn}
+\emph default
+ moves over.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{<}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{mtn}
+\emph default
+ · Shift 
+\emph on
+{mtn}
+\emph default
+ lines 1 'shiftwidth' leftwards.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{>}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{mtn}
+\emph default
+ · Shift 
+\emph on
+{mtn}
+\emph default
+ lines 1 'sw' rightwards.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+emph{:h 
+\backslash
+textsf{complex-change}}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{!}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{motion}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{filter}
+\emph default
+ · Filter 
+\emph on
+{motion}
+\emph default
+ text lines through the external program 
+\emph on
+{filter}
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+Patterns and Search Commands
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textsf{pattern-searches}
+\backslash
+
+\backslash
+
+\backslash
+textsf{usr
+\backslash
+_{}27.txt}}[-30pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Search Cmds}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{/}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{pattern}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+[
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{/}
+\end_layout
+
+\end_inset
+
+
+\series default
+]
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{<CR>}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Search forward for the 
+\emph on
+[count]
+\emph default
+'th occurrence of 
+\emph on
+{pattern}
+\emph default
+ 
+\family sans
+exclusive
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{?}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{pattern}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+[
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{?}
+\end_layout
+
+\end_inset
+
+
+\series default
+]
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{<CR>}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Search backward for the 
+\emph on
+[count]
+\emph default
+'th prev.
+ occurrence of 
+\emph on
+{pattern}
+\emph default
+ 
+\family sans
+exclusive
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textsf{last-pattern}
+\backslash
+
+\backslash
+
+\backslash
+emph{
+\backslash
+{Vi: no count
+\backslash
+}}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{n}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+'th 
+\bar under
+n
+\bar default
+ext search result.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{N}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\emph on
+[count]
+\emph default
+'th 
+\bar under
+N
+\bar default
+ext search result in opposite dir.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{'ignorecase' is used, 'smartcase' is not.}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{*}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Search forward for the 
+\emph on
+[count]
+\emph default
+'th occurrence of the whole word nearest to the cursor.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+#{}}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Same as "*", but search backward.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{"ga" prints the ASCII value of the char under the cursor in dec,
+ hex, and oct.}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+/
+\backslash
+%x9c
+\series default
+ · Search for the (non-printable) character with the 0x9c hexadecimal value.
+ 
+\family sans
+pattern-overview
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{d}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+g
+\bar default
+oto local 
+\bar under
+d
+\bar default
+eclaration.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{"gd" and "gD" only use a simple heuristic.}[-26pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{D}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+g
+\bar default
+oto global 
+\bar under
+D
+\bar default
+eclaration.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Search Options}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:nohls} to turn it off.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+'hls[earch]'
+\series default
+ · Global bool (off).
+ When there is a prev.
+ search pattern, highlight all its matches.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Also used when searching in the tags file.
+ Can be overruled by using "
+\backslash
+textbackslash{}c" or "
+\backslash
+textbackslash{}C" in the pattern, see 
+\backslash
+textsf{/ignorecase}.}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+'i[gnore]c[ase]'
+\series default
+ · Global boolean (default off).
+ Ignore case in search patterns.
+ Also see 'smartcase'.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+'w[rap]s[can]'
+\series default
+ · Global boolean (default on).
+ Searches wrap around the end of the file.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+reversemarginpar
+\backslash
+Marginnote{Global boolean (default off).
+ 
+\backslash
+emph{
+\backslash
+{not in Vi
+\backslash
+}}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\series bold
+'i[nc]s[earch]'
+\series default
+ · While typing a search cmd, show where the pattern, as it was typed so
+ far, matches.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Search History}
+\backslash
+
+\backslash
+
+\backslash
+textsf{history}}[-16pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{/}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{?}
+\end_layout
+
+\end_inset
+
+ then 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+arrowkeyup}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+arrowkeydown}
+\end_layout
+
+\end_inset
+
+ · Invoke old search patterns.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{After leaving with ":q", you can use ":w" or ":r" to write or
+ read patterns to/from a file.}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{q}
+\backslash
+,
+\backslash
+keys{/}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{q}
+\backslash
+,
+\backslash
+keys{?}
+\end_layout
+
+\end_inset
+
+ · Open the 
+\family sans
+cmdline-window
+\family default
+ with the previous search patterns.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Also 
+\backslash
+textsf{pattern}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:h 
+\family sans
+regular-expression
+\family default
+\series default
+ · About patterns and regexp.
+ See 
+\begin_inset Quotes eld
+\end_inset
+
+:h 
+\backslash
+v
+\begin_inset Quotes erd
+\end_inset
+
+ for mitigating regexp incompatibilities.
+\end_layout
+
+\begin_layout Section*
+More on Visual Mode
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:help 
+\backslash
+textsf{Visual}}
+\backslash
+
+\backslash
+'highlight'
+\backslash
+
+\backslash
+
+\backslash
+keys{v}
+\backslash
+,|
+\backslash
+,
+\backslash
+keys{V}
+\backslash
+,|
+\backslash
+,
+\backslash
+keys{
+\backslash
+ctrl-v}
+\backslash
+,|
+\backslash
+,
+\backslash
+keys{g}
+\backslash
+hspace{0.2mm}
+\backslash
+keys{v}}[-32pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+v_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{o}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to 
+\bar under
+o
+\bar default
+ther end of highlighted text.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Like "o", but in 
+\backslash
+emph{Visual block mode}, the cursor moves to the other corner in the same
+ line.}[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+v_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{O}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to 
+\bar under
+O
+\bar default
+ther end of hl'ed text.
+ In 
+\emph on
+block mode
+\emph default
+\SpecialChar \ldots{}
+
+\end_layout
+
+\begin_layout Standard
+v_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+$}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · In 
+\emph on
+Visual block mode
+\emph default
+, the right end of the hl'ed text will be determined by the longest hl'ed
+ line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Commands, that can be applied on the hl'ed text.}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+textasciitilde{}} 
+\backslash
+keys{=} 
+\backslash
+keys{!} 
+\backslash
+keys{<} 
+\backslash
+keys{>} 
+\backslash
+keys{:} 
+\backslash
+keys{c} 
+\backslash
+keys{C} 
+\backslash
+keys{d} 
+\backslash
+keys{D} 
+\backslash
+keys{I} 
+\backslash
+keys{J} 
+\backslash
+keys{p} 
+\backslash
+keys{P} 
+\backslash
+keys{r} 
+\backslash
+keys{R} 
+\backslash
+keys{s} 
+\backslash
+keys{S} 
+\backslash
+keys{u} 
+\backslash
+keys{U} 
+\backslash
+keys{y} 
+\backslash
+keys{Y} 
+\backslash
+keys{x} 
+\backslash
+keys{X} ·
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+v_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{I}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · In 
+\emph on
+block mode
+\emph default
+, 
+\bar under
+I
+\bar default
+nsert before each hl'ed line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textbf{Select mode} looks like 
+\backslash
+emph{Visual}, but the commands accepted are different.}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Check out "=
+\backslash
+%" and "=" for automatic formatting.
+ Also see 
+\family sans
+Select
+\family default
+ for a Windows-like 
+\series bold
+Select mode
+\series default
+.
+\end_layout
+
+\begin_layout Section*
+Registers
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{registers}
+\backslash
+
+\backslash
+
+\backslash
+textsf{linewise-register}
+\backslash
+
+\backslash
+
+\backslash
+textsf{blockwise-register}}[-30pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+""
+\series default
+ · Unnamed reg: Vim fills it with text deleted with 
+\begin_inset Quotes eld
+\end_inset
+
+d
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+c
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+s
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+ cmds or copied with yank 
+\begin_inset Quotes eld
+\end_inset
+
+y
+\begin_inset Quotes erd
+\end_inset
+
+ cmd.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+"0
+\series default
+ 
+\emph on
+to
+\emph default
+ 
+\series bold
+"9
+\series default
+ · Numbered registers: Vim fills these registers with text from yank and
+ delete commands\SpecialChar \ldots{}
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+"a
+\series default
+ 
+\emph on
+to
+\emph default
+ 
+\series bold
+"z
+\series default
+ · Named registers: filled only on demand.
+ Use uppercase letters to append to prev.
+ content.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+["x]
+\series bold
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{p}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+p
+\bar default
+ut the text 
+\emph on
+[from register x] (
+\emph default
+""
+\emph on
+ by default)
+\emph default
+ after the cursor 
+\emph on
+[count]
+\emph default
+ times.
+ 
+\emph on
+{Vi: no count}
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+["x]
+\series bold
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{P}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+P
+\bar default
+ut the text 
+\emph on
+[from register x] (
+\emph default
+""
+\emph on
+ by default)
+\emph default
+ before the cursor 
+\emph on
+[count]
+\emph default
+ times.
+ 
+\emph on
+{Vi: no count}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{(Reg is 
+\backslash
+emph{"" by def})}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+["x]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{y}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\emph on
+{motion}
+\emph default
+ · 
+\bar under
+y
+\bar default
+ank 
+\emph on
+{motion}
+\emph default
+ text 
+\emph on
+[into reg x]
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Check ":map Y y
+\backslash
+$"}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+["x]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{Y}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+|
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{yy}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+Y
+\bar default
+ank 
+\emph on
+[count]
+\emph default
+ lines 
+\emph on
+[into reg x] (def 
+\emph default
+""
+\emph on
+)
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{Reg '
+\backslash
+%' and '
+\backslash
+#' cannot be used.
+ For "@=", enter expression, result is then exec'ed.
+ See "
+\backslash
+textsf{@:}" for cmdline repeat.}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{@}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\emph on
+{0-9a-z".=*}
+\emph default
+ · Execute the contents of reg 
+\emph on
+[count]
+\emph default
+ times.
+ 
+\emph on
+{Vi: only named registers
+\emph default
+}
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:reg[isters]
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\emph on
+[arg]
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+:di[splay]
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\emph on
+[arg]
+\emph default
+ · 
+\bar under
+di
+\bar default
+splay the contents of all 
+\bar under
+reg
+\bar default
+s, or regs mentioned in 
+\emph on
+[arg]
+\emph default
+.
+ 
+\emph on
+{no Vi}
+\end_layout
+
+\begin_layout Section*
+Undo Branches
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{usr
+\backslash
+_32.txt}
+\backslash
+
+\backslash
+
+\backslash
+textsf{undo.txt}
+\backslash
+
+\backslash
+
+\backslash
+textsf{undo-tree}
+\backslash
+
+\backslash
+
+\backslash
+textsf{undo-persistence}}[-32pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:undol[ist]
+\series default
+ · List the leafs in the tree of changes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Check 'undolevels'}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{{--}}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to 
+\emph on
+[count]
+\emph default
+'th older text state.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:earlier
+\begin_inset space ~
+\end_inset
+
+
+\series default
+\emph on
+{N}
+\emph default
+m · Go to older text state 
+\emph on
+{N}
+\emph default
+ mins before.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{+}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to 
+\emph on
+[count]
+\emph default
+'th newer text state.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{:help udf}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+'undofile'
+\series default
+ · If on, undo history is saved when a file is written, and restored when
+ the file is edited again.
+\end_layout
+
+\begin_layout Section*
+Windows and Tab Pages
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{windows}, 
+\backslash
+textsf{tab-page-commands}, 
+\backslash
+emph{
+\backslash
+^{}w}, 
+\backslash
+textsf{opening-window}}[-32pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{":vnew" to split vertically.}[-6pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[N]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+new
+\series default
+ 
+\emph on
+[++opt]
+\emph default
+ 
+\emph on
+[+cmd]
+\emph default
+ 
+\emph on
+{file}
+\emph default
+ · Create a new window 
+\emph on
+N
+\emph default
+ high, and start editing 
+\emph on
+{file}
+\emph default
+ in it.
+ Also see 
+\series bold
+:vnew
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textsf{window-move-cursor}}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-w}
+\end_layout
+
+\end_inset
+
+
+\emph on
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{arrow}
+\end_layout
+
+\end_inset
+
+
+\series default
+\emph default
+ · Move to 
+\emph on
+N
+\emph default
+'th window in 
+\emph on
+arrow
+\emph default
+ dir.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textsf{window-resize}}[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-w}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{+}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+|
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{{--}}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Incr.
+\begin_inset space \thinspace{}
+\end_inset
+
+|
+\begin_inset space \thinspace{}
+\end_inset
+
+decr.
+ current height by 
+\emph on
+N
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-w}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{>}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+|
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{<}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Incr.
+\begin_inset space \thinspace{}
+\end_inset
+
+|
+\begin_inset space \thinspace{}
+\end_inset
+
+decr.
+ current width by 
+\emph on
+N
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Also see 'wfh'
+\backslash
+
+\backslash
+and 'wfw'.}[-8pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-w}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{=}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Make all windows (almost) equally high and wide, but use 'wh' and 'wiw'
+ for current.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalmarginpar
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+emph{N} is maximum possible by default.}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-w}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+_}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+|
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{|}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Set current height
+\begin_inset space \thinspace{}
+\end_inset
+
+|
+\begin_inset space \thinspace{}
+\end_inset
+
+width to 
+\emph on
+N
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalmarginpar
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{See 
+\backslash
+textsf{zN<CR>}}[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{z}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{height}
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{<CR>}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Make window 
+\emph on
+{height}
+\emph default
+ lines tall.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalmarginpar
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textbf{Tab Pages}
+\backslash
+
+\backslash
+
+\backslash
+textsf{:tab}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\emph on
+[count]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+tabe[dit]
+\series default
+ 
+\emph on
+[++opt]
+\emph default
+ 
+\emph on
+[+cmd]
+\emph default
+ 
+\emph on
+{file}
+\emph default
+ · Open a new tab page after the 
+\emph on
+[count]
+\emph default
+'th one, and edit 
+\emph on
+{file}
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{t}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to the next 
+\bar under
+t
+\bar default
+ab page.
+ Wraps around.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{T}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Go to the prev.
+ 
+\bar under
+T
+\bar default
+ab page.
+ Wraps around.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:tabm[ove]
+\series default
+ 
+\emph on
+[N]
+\emph default
+ · Move the current tab after tab 
+\emph on
+N
+\emph default
+.
+\end_layout
+
+\begin_layout Section*
+Useful and Relevant
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{See ":cd", 'ruler', and 'shortmess'.}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-g}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Print file name, cursor pos., and file status.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{
+\backslash
+ctrl-g}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Print cursor pos.
+ in five ways: Column, Line, Word, Character and Byte.
+ 
+\emph on
+{not in Vi}
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-l}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Clear and redraw the screen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{See 
+\backslash
+textsf{ins-completion}
+\backslash
+
+\backslash
+'complete'}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-p}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-n}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\series bold
+Keyword
+\series default
+ 
+\series bold
+completion
+\series default
+ --- search is done backwards
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+forwards for next match.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textsf{new-omni-completion}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i_
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-x}
+\backslash
+,
+\backslash
+keys{
+\backslash
+ctrl-o}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Guess what kind of item is in front of the cursor and find the first
+ match for it.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{=}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\emph on
+{motion}
+\emph default
+ · 
+\series bold
+Format
+\series default
+ 
+\emph on
+{motion}
+\emph default
+ lines according to the rules currently defined for the actual language.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{=}
+\backslash
+,
+\backslash
+keys{=}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Format 
+\emph on
+[count]
+\emph default
+ lines like with 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+=
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-a}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+ctrl-x}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · 
+\bar under
+a
+\bar default
+dd
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+subtract 
+\emph on
+[count]
+\emph default
+ to
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+from number or alphabetic char at or after cursor.
+ 
+\emph on
+{no Vi}
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{K}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Run a program to lookup the 
+\series bold
+\bar under
+K
+\bar default
+eyword
+\series default
+ under the cursor.
+ 'keywordprg' is "man" by default.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+emph{:nnoremap Q gq}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{Q}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Switch to 
+\series bold
+Ex mode
+\series default
+.
+ Use 
+\begin_inset Quotes eld
+\end_inset
+
+:vi
+\begin_inset Quotes erd
+\end_inset
+
+ to exit.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+textvisiblespace{}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+· See
+\emph on
+
+\begin_inset space \enspace{}
+\end_inset
+
+gv
+\begin_inset space \enspace{}
+\end_inset
+
+gR
+\begin_inset space \enspace{}
+\end_inset
+
+gq
+\begin_inset space \enspace{}
+\end_inset
+
+g?
+\begin_inset space \enspace{}
+\end_inset
+
+go
+\begin_inset space \enspace{}
+\end_inset
+
+ga
+\begin_inset space \enspace{}
+\end_inset
+
+8g8
+\begin_inset space \enspace{}
+\end_inset
+
+gt
+\begin_inset space \enspace{}
+\end_inset
+
+gT
+\emph default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%0x2423␣
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Ex Commands
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{
+\backslash
+textsf{:index, cmdline, cmdline
+\backslash
+hyp{}ranges, offset}}[-32pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{:}
+\end_layout
+
+\end_inset
+
+
+\series default
+ then 
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+arrowkeyup}
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{
+\backslash
+arrowkeydown}
+\end_layout
+
+\end_inset
+
+ 
+\series default
+· Invoke old Ex commands.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{'cedit' is used in Cmdline mode to open cmdline window.
+ "Ctrl-f" by def.
+ if 'compatible' off.}[-30pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{q}
+\backslash
+,
+\backslash
+keys{:}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Open 
+\family sans
+cmdline-window
+\family default
+ with prev.
+ Ex cmds.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{Also see Visual area marks 
+\backslash
+textsf{'<} and 
+\backslash
+textsf{'>}.}[0pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[range]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+s[ubstitute]/
+\series default
+\emph on
+{pattern}
+\series bold
+\emph default
+/
+\series default
+\emph on
+{string}
+\series bold
+\emph default
+/
+\series default
+\emph on
+[flags]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\emph on
+[cnt]
+\emph default
+ · For each line in 
+\emph on
+[range]
+\emph default
+ replace a match of 
+\emph on
+{pattern}
+\emph default
+ with 
+\emph on
+{string}
+\emph default
+.
+ Also see 
+\family sans
+sub-replace-special, :s_flags
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0pt}
+\backslash
+Marginnote{"!" inverse matches.
+ 
+\backslash
+emph{[cmd]} def's to ":p".
+\backslash
+
+\backslash
+
+\backslash
+
+\backslash
+Check 
+\backslash
+emph{":norm[al][!] 
+\backslash
+{commands
+\backslash
+}"}.}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[range]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+g[lobal]
+\series default
+[!]
+\series bold
+/
+\series default
+\emph on
+{pattern}
+\series bold
+\emph default
+/
+\series default
+\emph on
+[cmd]
+\emph default
+ · Exec' 
+\emph on
+[cmd]
+\emph default
+ on lines within 
+\emph on
+[range]
+\emph default
+ where 
+\emph on
+{pattern}
+\emph default
+ matches.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[range]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+d[elete]
+\series default
+ 
+\emph on
+[x]
+\emph default
+ 
+\emph on
+{cnt}
+\emph default
+ · 
+\bar under
+d
+\bar default
+elete 
+\emph on
+{cnt}
+\emph default
+ lines, starting with 
+\emph on
+[range]
+\emph default
+ (default: current line) 
+\emph on
+[into reg x]
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textsf{line-continuation}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+{rng}
+\series bold
+\emph default
+i[nsert]
+\series default
+ · 
+\series bold
+:
+\series default
+\emph on
+{rng}
+\series bold
+\emph default
+a[ppend]
+\series default
+ · 
+\series bold
+:
+\series default
+\emph on
+{rng}
+\series bold
+\emph default
+c[hange]
+\series default
+ ·
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:sh[ell]
+\series default
+ · Start 'shell'.
+ When shell exits, ret's to Vim.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{'shellredir'
+\backslash
+
+\backslash
+Use 
+\backslash
+emph{":
+\backslash
+,
+\backslash
+{rng
+\backslash
+}
+\backslash
+,!!"} to repeat last 
+\backslash
+emph{":
+\backslash
+,!
+\backslash
+,
+\backslash
+{cmd
+\backslash
+}"}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\begin_inset space \thinspace{}
+\end_inset
+
+!
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\emph on
+{cmd}
+\emph default
+ · Execute 
+\emph on
+{cmd}
+\emph default
+ with the shell.
+ With 
+\emph on
+{range}
+\emph default
+ or in Visual --- like filter command.
+ E.g.
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+:.,+5
+\begin_inset space \thinspace{}
+\end_inset
+
+!
+\begin_inset space \thinspace{}
+\end_inset
+
+sort
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[rng]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+w[rite]
+\series default
+\emph on
+
+\begin_inset space \thinspace{}
+\end_inset
+
+[++opt]
+\emph default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\series bold
+!
+\series default
+\emph on
+{cmd}
+\emph default
+ · Exec' 
+\emph on
+{cmd}
+\emph default
+ with 
+\emph on
+[rng]
+\emph default
+ lines as std input.
+ Note: mind space before '!'.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[range]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+r[ead]
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\series bold
+!
+\series default
+\emph on
+{cmd}
+\emph default
+ · Execute 
+\emph on
+{cmd}
+\emph default
+ and insert its standard output below cursor or specified line.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:so[urce]
+\series default
+ 
+\emph on
+{file}
+\emph default
+ · Read Ex commands from 
+\emph on
+{file}
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{See 
+\backslash
+textsf{ex-flags}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[range]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+p[rint]
+\series default
+ 
+\emph on
+[flags]
+\emph default
+ · Print 
+\emph on
+[range]
+\emph default
+ lines.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{See 'listchars' and 
+\backslash
+textsf{ex-flags}.
+\backslash
+
+\backslash
+ 
+\backslash
+emph{:set list}
+\backslash
+quad{}
+\backslash
+emph{:set nolist}}[-11pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[range]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+l[ist]
+\series default
+ 
+\emph on
+[count]
+\emph default
+ 
+\emph on
+[flags]
+\emph default
+ · Like 
+\emph on
+:print
+\emph default
+, but display unprintable chars with '^' and put $ after the line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{'hl' 'nuw' 
+\backslash
+textsf{ex-flags}}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:
+\series default
+\emph on
+[rng]
+\emph default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+nu[mber]
+\series default
+ 
+\emph on
+[cnt] [flags]
+\emph default
+ · Like 
+\emph on
+:p
+\emph default
+, w.
+\begin_inset space \thinspace{}
+\end_inset
+
+line nums.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+emph{
+\backslash
+{no Vi
+\backslash
+}} 'verbosefile'}[-10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:redi[r]
+\series default
+[!] 
+\series bold
+>
+\series default
+ 
+\emph on
+{file}
+\emph default
+ · Redirect messages to 
+\emph on
+{file}
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:sil[ent][!]
+\series default
+ 
+\emph on
+{cmd}
+\emph default
+ · Exec' 
+\emph on
+{cmd}
+\emph default
+ silently.
+ Normal messages will not be added to the message history.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:ec[ho]
+\series default
+ 
+\emph on
+{expr1}
+\emph default
+ ..
+ · Echoes each 
+\emph on
+{expr1}
+\emph default
+, with a space in between.
+ Also see 
+\family sans
+:comment
+\family default
+ and 
+\family sans
+:echohl
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:as[cii]
+\series default
+
+\begin_inset space ~
+\end_inset
+
+|
+\begin_inset space ~
+\end_inset
+
+
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+keys{g}
+\backslash
+,
+\backslash
+keys{a}
+\end_layout
+
+\end_inset
+
+
+\series default
+ · Print the ASCII value of the character under cursor in decimal, hexadec.
+\begin_inset space ~
+\end_inset
+
+and octal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+reversemarginpar
+\backslash
+Marginnote{Also see 
+\backslash
+textsf{-x}
+\backslash
+
+\backslash
+
+\backslash
+emph{:se cm=blowfish}
+\backslash
+
+\backslash
+
+\backslash
+emph{:se key=}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+:X
+\series default
+ · Prompt for an encryption key.
+ The typed key is stored in 'key', which encrypts the file upon write.
+\end_layout
+
+\begin_layout Section*
+Additional Material
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textbf{Topics}
+\backslash
+
+\backslash
+:help quickref.txt
+\backslash
+
+\backslash
+:help 
+\backslash
+emph{
+\backslash
+{subject
+\backslash
+}}}[-14pt]
+\end_layout
+
+\end_inset
+
+
+\series bold
+Startup
+\family sans
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\family default
+·
+\family sans
+
+\begin_inset space \enspace{}
+\end_inset
+
+starting
+\begin_inset space \enspace{}
+\end_inset
+
+vim-arguments
+\begin_inset space \enspace{}
+\end_inset
+
+ex
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nohyphens{startup}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enspace{}
+\end_inset
+
+trojan
+\begin_inset space \enskip{}
+\end_inset
+
+:version
+\begin_inset space \enspace{}
+\end_inset
+
+:script
+\begin_inset space \enskip{}
+\end_inset
+
+'runtimepath'
+\begin_inset space \enskip{}
+\end_inset
+
+$VIMRUNTIME
+\family default
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Messages
+\family sans
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\family default
+·
+\family sans
+
+\begin_inset space \enspace{}
+\end_inset
+
+more
+\begin_inset space \enspace{}
+\end_inset
+
+less
+\begin_inset space \enspace{}
+\end_inset
+
+pager
+\begin_inset space \enspace{}
+\end_inset
+
+:messages
+\begin_inset space \enspace{}
+\end_inset
+
+errors
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+Settings
+\family sans
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\family default
+·
+\family sans
+
+\begin_inset space \enspace{}
+\end_inset
+
+vimrc
+\begin_inset space \enspace{}
+\end_inset
+
+plugin
+\begin_inset space \enspace{}
+\end_inset
+
+write-plugin
+\begin_inset space \enspace{}
+\end_inset
+
+script
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+filetype
+\backslash
+hyp{}plugin
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enspace{}
+\end_inset
+
+:set
+\begin_inset space \enspace{}
+\end_inset
+
+local-options
+\begin_inset space \enspace{}
+\end_inset
+
+option-summary
+\begin_inset space \enspace{}
+\end_inset
+
+option-list
+\begin_inset space \enspace{}
+\end_inset
+
+options
+\begin_inset space \enspace{}
+\end_inset
+
+recover.txt
+\begin_inset space \enspace{}
+\end_inset
+
+viewoptions
+\begin_inset space \enspace{}
+\end_inset
+
+sessionoptions
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+views
+\backslash
+hyp{}sessions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+Scripts
+\family sans
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\family default
+·
+\family sans
+
+\begin_inset space \enspace{}
+\end_inset
+
+:so
+\begin_inset space \enspace{}
+\end_inset
+
+:normal
+\begin_inset space \enspace{}
+\end_inset
+
+cmdline
+\begin_inset space \enspace{}
+\end_inset
+
+cmdline-lines
+\begin_inset space \enspace{}
+\end_inset
+
+line-continuation
+\begin_inset space \enspace{}
+\end_inset
+
+cmdline-special
+\begin_inset space \enspace{}
+\end_inset
+
+expr9
+\begin_inset space \enspace{}
+\end_inset
+
+expr
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+41.
+\backslash
+vspace{0pt}2
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+expression
+\backslash
+hyp{}syntax
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enspace{}
+\end_inset
+
+expression-commands
+\begin_inset space \enspace{}
+\end_inset
+
+echo
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+echon
+\begin_inset space \enspace{}
+\end_inset
+
+echohl
+\begin_inset space \enspace{}
+\end_inset
+
+:redir
+\begin_inset space \enspace{}
+\end_inset
+
+exception-handling
+\begin_inset space \enspace{}
+\end_inset
+
+functions
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+user-functions
+\begin_inset space \enspace{}
+\end_inset
+
+Lists
+\begin_inset space \enspace{}
+\end_inset
+
+Dictionaries
+\begin_inset space \enspace{}
+\end_inset
+
+Funcref
+\begin_inset space \enspace{}
+\end_inset
+
+'verbose'
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+write-delay
+\begin_inset space \enspace{}
+\end_inset
+
+debug-scripts
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+Features
+\family sans
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\family default
+·
+\family sans
+
+\begin_inset space \enspace{}
+\end_inset
+
+abbreviations
+\begin_inset space \enspace{}
+\end_inset
+
+map.txt
+\begin_inset space \enspace{}
+\end_inset
+
+key-codes
+\begin_inset space \enspace{}
+\end_inset
+
+user-commands
+\begin_inset space \enspace{}
+\end_inset
+
+40.2
+\begin_inset space \enspace{}
+\end_inset
+
+autocmd.txt
+\begin_inset space \enspace{}
+\end_inset
+
+40.3
+\begin_inset space \enspace{}
+\end_inset
+
+fold.txt
+\begin_inset space \enspace{}
+\end_inset
+
+
+\family default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family sans
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nohyphens{usr
+\backslash
+_28.txt}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enspace{}
+\end_inset
+
+fold-commands
+\begin_inset space \enspace{}
+\end_inset
+
+fold-manual
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyphenpenalty=1
+\backslash
+mbox{fold-marker}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+modeline
+\begin_inset space \enspace{}
+\end_inset
+
+formatting
+\begin_inset space \enspace{}
+\end_inset
+
+indent.txt
+\begin_inset space \enspace{}
+\end_inset
+
+C-indenting
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+'indentexpr'
+\begin_inset space \enspace{}
+\end_inset
+
+syntax
+\begin_inset space \enspace{}
+\end_inset
+
+06.2
+\begin_inset space \enspace{}
+\end_inset
+
+syntax-loading
+\begin_inset space \enspace{}
+\end_inset
+
+:highlight
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+:colorscheme
+\begin_inset space \enspace{}
+\end_inset
+
+:hi-link
+\begin_inset space \enspace{}
+\end_inset
+
+syn-define
+\begin_inset space \enspace{}
+\end_inset
+
+usr_44
+\begin_inset space \enspace{}
+\end_inset
+
+%
+\begin_inset space \enspace{}
+\end_inset
+
+[
+\begin_inset space \enspace{}
+\end_inset
+
+ctags
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+tagsrch
+\begin_inset space \enspace{}
+\end_inset
+
+29.1
+\begin_inset space \enspace{}
+\end_inset
+
+cscope
+\begin_inset space \enspace{}
+\end_inset
+
+29.4
+\begin_inset space \enspace{}
+\end_inset
+
+:make
+\begin_inset space \enspace{}
+\end_inset
+
+:grep
+\begin_inset space \enspace{}
+\end_inset
+
+quickfix.txt
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+30.1
+\begin_inset space \enspace{}
+\end_inset
+
+diff.txt
+\begin_inset space \enspace{}
+\end_inset
+
+08.7
+\begin_inset space \enspace{}
+\end_inset
+
+python
+\begin_inset space \enspace{}
+\end_inset
+
+perl
+\begin_inset space \enspace{}
+\end_inset
+
+cmdline-special
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+expand
+\begin_inset space \enspace{}
+\end_inset
+
+<sfile>
+\begin_inset space \enspace{}
+\end_inset
+
+netrw
+\begin_inset space \enspace{}
+\end_inset
+
+zip
+\begin_inset space \enspace{}
+\end_inset
+
+tar
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+Practical
+\family sans
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\family default
+·
+\family sans
+
+\begin_inset space \enspace{}
+\end_inset
+
+xml.vim
+\begin_inset space \enspace{}
+\end_inset
+
+spell.txt
+\begin_inset space \enspace{}
+\end_inset
+
+hex-editing
+\begin_inset space \enspace{}
+\end_inset
+
+:Explore
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+\series bold
+Tips
+\family sans
+\series default
+
+\begin_inset space \enspace{}
+\end_inset
+
+
+\family default
+·
+\family sans
+
+\begin_inset space \enspace{}
+\end_inset
+
+tips
+\begin_inset space \enspace{}
+\end_inset
+
+:options
+\begin_inset space \enspace{}
+\end_inset
+
+'ruler'
+\begin_inset space \enspace{}
+\end_inset
+
+'showmode'
+\begin_inset space \enspace{}
+\end_inset
+
+'showcmd'
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+'showmatch'
+\begin_inset space \enspace{}
+\end_inset
+
+'wrapscan'
+\begin_inset space \enspace{}
+\end_inset
+
+'incsearch'
+\begin_inset space \enspace{}
+\end_inset
+
+'autoindent'
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+'shiftwidth'
+\begin_inset space \enspace{}
+\end_inset
+
+'showcmd'
+\begin_inset space \enspace{}
+\end_inset
+
+:mksession
+\begin_inset space \enspace{}
+\end_inset
+
+'paste'
+\begin_inset space \enspace{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+i_backspacing
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textbf{Links}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Beginner's Tutorial"
+target "http://linuxconfig.org/vim-tutorial"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Poster"
+target "http://github.com/LevelbossMike/vim_shortcut_wallpaper"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Modes"
+target "http://tuxradar.com/content/vim-master-basics"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "vim.org"
+target "http://www.vim.org/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "vim.wikia.com"
+target "http://vim.wikia.com/wiki/Best_Vim_Tips"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "vimgolf.com"
+target "http://vimgolf.com/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Tips by Ben"
+target "http://www.youtube.com/watch?v=ke7SfUFvvxo"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Calmar's Tips"
+target "http://www.calmar.ws/vim/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "7 Habits"
+target "http://www.moolenaar.net/vim.html"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Welcome by Derek"
+target "http://vimeo.com/6999927"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Coming Home to Vim"
+target "http://stevelosh.com/blog/2010/09/coming-home-to-vim/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "How I boosted my Vim"
+target "http://nvie.com/posts/how-i-boosted-my-vim/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "vimcasts.org"
+target "http://vimcasts.org/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "lococast.net"
+target "http://lococast.net/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Essential Plugins"
+target "http://net.tutsplus.com/sessions/vim-essential-plugins/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "15 Best Vim Plugins"
+target "http://spf13.com/post/the-15-best-vim-plugins"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "dotfiles on GitHub"
+target "http://dotfiles.github.io/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "bestofvim.com"
+target "http://www.bestofvim.com/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textbf{Color Schemes}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Solarized"
+target "http://ethanschoonover.com/solarized"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Zenburn"
+target "http://slinky.imukuppi.org/zenburnpage/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "wombat256"
+target "http://gergap.wordpress.com/2009/06/01/new-vim-color-scheme-wombat256/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "xoria256"
+target "http://morante.eu/blog/xoria/"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "Mustang"
+target "http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484"
+
+\end_inset
+
+ · 
+\begin_inset CommandInset href
+LatexCommand href
+name "dotshare.it"
+target "http://dotshare.it/category/vim/colors/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Hide
+status collapsed
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Marginnote{
+\backslash
+textbf{Tips by Ben}}[-12pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Learn to use the Vim help, and efficient navigation · Keep a cheat sheet
+ on your desk, and slowly but steadily learn Vim commands · Keep track of
+ your annoyances, e.g.
+\begin_inset space ~
+\end_inset
+
+on the back of your cheat sheet · Learn all the single letter commands,
+ and look at each key, even capitals · Keep your fingers on the home row,
+ and rebind Esc, or use Ctrl--[
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Tips by Ben
+\end_layout
+
+\begin_layout Itemize
+Learn to use the Vim help, and efficient navigation
+\end_layout
+
+\begin_layout Itemize
+Keep a cheat sheet on your desk, and slowly but steadily learn Vim commands
+\end_layout
+
+\begin_layout Itemize
+Keep track of your annoyances, e.g.
+\begin_inset space ~
+\end_inset
+
+on the back of your cheat sheet, and look for solutions
+\end_layout
+
+\begin_layout Itemize
+Learn all the single letter commands, and look at each key, even capitals
+\end_layout
+
+\begin_layout Itemize
+Keep your fingers on the home row, and rebind Esc, or use Ctrl--[
+\end_layout
+
+\begin_layout Section*
+My Initial .vimrc
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\tiny\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+set encoding=utf-8
+\end_layout
+
+\begin_layout Plain Layout
+
+set langmenu=en_US.UTF-8         " Language of the menu (gVim).
+\end_layout
+
+\begin_layout Plain Layout
+
+language messages en_US.UTF-8    " Language of the messages/UI (Vim).
+\end_layout
+
+\begin_layout Plain Layout
+
+if has("win32") || has("win64")
+\end_layout
+
+\begin_layout Plain Layout
+
+    set directory=$TEMP,.
+        " Swap file fix under Windows.
+\end_layout
+
+\begin_layout Plain Layout
+
+    set backupdir=$TEMP,.
+        " Change backup directory too.
+\end_layout
+
+\begin_layout Plain Layout
+
+    cd $USERPROFILE              " Set starting directory.
+\end_layout
+
+\begin_layout Plain Layout
+
+endif    " See $HOME --- http://markmail.org/message/wbzs4gmtvkbewgxi
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Vi compatibility and related options
+\end_layout
+
+\begin_layout Plain Layout
+
+"====================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+set nocompatible   " Turn off Vi compatibility for all Vim features.
+\end_layout
+
+\begin_layout Plain Layout
+
+set cpo+=$         " Show "$" after the last character to be changed.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Pathogen for the easy installation of plugins
+\end_layout
+
+\begin_layout Plain Layout
+
+"====================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+call pathogen#infect()       " Include subdirs under "~/.vim/bundle".
+\end_layout
+
+\begin_layout Plain Layout
+
+call pathogen#helptags()     " Generate help tags for those plugins.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Basic editing behaviour
+\end_layout
+
+\begin_layout Plain Layout
+
+"====================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+set hidden        " Buffer is hidden, not unloaded, when abandoned.
+\end_layout
+
+\begin_layout Plain Layout
+
+set number        " Always show line numbers.
+\end_layout
+
+\begin_layout Plain Layout
+
+set showmatch     " Set show matching parenthesis.
+\end_layout
+
+\begin_layout Plain Layout
+
+set wrap          " Enable long line wrapping.
+\end_layout
+
+\begin_layout Plain Layout
+
+set linebreak     " Wrap long lines at 'breakat'.
+ Only if 'nolist'.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+set tabstop=4     " A tab is N spaces --- tedlogan.com/techblog3.html
+\end_layout
+
+\begin_layout Plain Layout
+
+set expandtab     " Always expand <Tab> to spaces.
+\end_layout
+
+\begin_layout Plain Layout
+
+set shiftwidth=4  " N spaces to use for autoindenting.
+\end_layout
+
+\begin_layout Plain Layout
+
+set softtabstop=4 " Tab is N spaces in Insert mode.
+\end_layout
+
+\begin_layout Plain Layout
+
+set backspace=2   " Allow i_backspacing over indent, eol, and start.
+\end_layout
+
+\begin_layout Plain Layout
+
+set autoindent    " Always set autoindenting on.
+\end_layout
+
+\begin_layout Plain Layout
+
+set copyindent    " Copy the previous indentation on autoindenting.
+\end_layout
+
+\begin_layout Plain Layout
+
+set shiftround    " Use multiples of 'sw' upon '<' and '>'.
+\end_layout
+
+\begin_layout Plain Layout
+
+set smarttab      " Insert tabs at ^ according to'sw', not 'ts'.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+set hlsearch      " Highlight search terms.
+ Switch off with ":nohls".
+\end_layout
+
+\begin_layout Plain Layout
+
+set ignorecase    " Ignore case when searching.
+ 'scs' overrides this.
+\end_layout
+
+\begin_layout Plain Layout
+
+set smartcase     " Ignore case if search pattern is all lowercase.
+\end_layout
+
+\begin_layout Plain Layout
+
+set incsearch     " Show search matches as you type.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Advanced editing behaviour
+\end_layout
+
+\begin_layout Plain Layout
+
+"====================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+set nolist              " Disable whitespace visual aids.
+ See 'lcs'.
+\end_layout
+
+\begin_layout Plain Layout
+
+set listchars=tab:>.,trail:.,extends:#,nbsp:~
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+set scrolloff=5         " Min.
+ lines to keep above and below cursor.
+\end_layout
+
+\begin_layout Plain Layout
+
+set sidescrolloff=10    " Min.
+ cols to left and to right of cursor.
+\end_layout
+
+\begin_layout Plain Layout
+
+set sidescroll=1        " Min.
+ cols to scroll horizontally.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" History
+\end_layout
+
+\begin_layout Plain Layout
+
+"--------------------------------------------------------------------
+\end_layout
+
+\begin_layout Plain Layout
+
+set history=1000        " Remember more commands and search history.
+\end_layout
+
+\begin_layout Plain Layout
+
+set undolevels=1000     " Use this many of levels of undo.
+\end_layout
+
+\begin_layout Plain Layout
+
+if has("win32") || has("win64")
+\end_layout
+
+\begin_layout Plain Layout
+
+    set undodir=$USERPROFILE
+\backslash
+vimfiles
+\backslash
+undodir
+\end_layout
+
+\begin_layout Plain Layout
+
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+    set undodir=~/.vim/undodir
+\end_layout
+
+\begin_layout Plain Layout
+
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+set undofile            " Enable persistent undo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" File type plugins
+\end_layout
+
+\begin_layout Plain Layout
+
+"--------------------------------------------------------------------
+\end_layout
+
+\begin_layout Plain Layout
+
+filetype plugin indent on
+\end_layout
+
+\begin_layout Plain Layout
+
+autocmd filetype make set noexpandtab
+\end_layout
+
+\begin_layout Plain Layout
+
+autocmd filetype python set expandtab
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Syntax highlighting, (G)UI related settings
+\end_layout
+
+\begin_layout Plain Layout
+
+"====================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+if &t_Co >= 256 || has("gui_running")
+\end_layout
+
+\begin_layout Plain Layout
+
+    colorscheme solarized                  " Or: "zenburn".
+\end_layout
+
+\begin_layout Plain Layout
+
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+if &t_Co > 2 || has("gui_running")
+\end_layout
+
+\begin_layout Plain Layout
+
+    syntax on
+\end_layout
+
+\begin_layout Plain Layout
+
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+if has("gui_running")
+\end_layout
+
+\begin_layout Plain Layout
+
+    set background=light
+\end_layout
+
+\begin_layout Plain Layout
+
+    set guicursor+=a:blinkon0              " Disable cursor blinking.
+\end_layout
+
+\begin_layout Plain Layout
+
+    set guioptions-=T                      " Turn off gVim toolbar.
+\end_layout
+
+\begin_layout Plain Layout
+
+    set guioptions+=rRlLb
+\end_layout
+
+\begin_layout Plain Layout
+
+    set guioptions-=rRlLb                  " Remove all scroll bars.
+\end_layout
+
+\begin_layout Plain Layout
+
+    if has("gui_gtk2")
+\end_layout
+
+\begin_layout Plain Layout
+
+        set guifont=Inconsolata
+\backslash
+ Medium
+\backslash
+ 12
+\end_layout
+
+\begin_layout Plain Layout
+
+    elseif has("gui_win32")
+\end_layout
+
+\begin_layout Plain Layout
+
+        set guifont=Consolas:h12:cDEFAULT  " Or: "Inconsolata:h12:b".
+\end_layout
+
+\begin_layout Plain Layout
+
+    endif
+\end_layout
+
+\begin_layout Plain Layout
+
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+    set background=dark
+\end_layout
+
+\begin_layout Plain Layout
+
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+set wildmode=list:longest
+\end_layout
+
+\begin_layout Plain Layout
+
+set wildignore=*.o,*.obj,*~    " Stuff to ignore when tab completing.
+\end_layout
+
+\begin_layout Plain Layout
+
+set wildmenu                   " Scroll thru matches by C-n and C-p.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Mappings
+\end_layout
+
+\begin_layout Plain Layout
+
+"====================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+set pastetoggle=<F2>           " Paste mode toggle not to get crazy.
+\end_layout
+
+\begin_layout Plain Layout
+
+let mapleader=","              " Change the mapleader from '
+\backslash
+' to ','
+\end_layout
+
+\begin_layout Plain Layout
+
+nmap <silent> ,/ :nohls<CR>    " Clear search buffer.
+ See ":noh".
+\end_layout
+
+\begin_layout Plain Layout
+
+:imap <M-j> <Esc>              " For exiting Insert mode.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Quickly edit/reload the vimrc file
+\end_layout
+
+\begin_layout Plain Layout
+
+"''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+\end_layout
+
+\begin_layout Plain Layout
+
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+\end_layout
+
+\begin_layout Plain Layout
+
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" If line wrapping is enabled, jump to the next row in case of a long
+\end_layout
+
+\begin_layout Plain Layout
+
+" wrapped line, instead of jumping over to the next line.
+\end_layout
+
+\begin_layout Plain Layout
+
+"''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+\end_layout
+
+\begin_layout Plain Layout
+
+nnoremap j gj
+\end_layout
+
+\begin_layout Plain Layout
+
+nnoremap k gk
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Get a life, get a sane status line
+\end_layout
+
+\begin_layout Plain Layout
+
+"====================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+" See http://learnvimscriptthehardway.stevelosh.com/chapters/17.html
+\end_layout
+
+\begin_layout Plain Layout
+
+set laststatus=2   " Always show the status line.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Other indicators
+\end_layout
+
+\begin_layout Plain Layout
+
+"''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+\end_layout
+
+\begin_layout Plain Layout
+
+set ruler          " Show the cursor position.
+\end_layout
+
+\begin_layout Plain Layout
+
+set showmode       " Show the current mode.
+\end_layout
+
+\begin_layout Plain Layout
+
+set title          " Show the filename in the window titlebar.
+\end_layout
+
+\begin_layout Plain Layout
+
+set showcmd        " Show the (partial) command as it is being typed.
+\end_layout
+
+\begin_layout Plain Layout
+
+set colorcolumn=80 " Show the print margin.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+" Reference
+\end_layout
+
+\begin_layout Plain Layout
+
+"====================================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+" Check out the following links for more .vimrc related goodies:
+\end_layout
+
+\begin_layout Plain Layout
+
+" -- https://github.com/tpope/vim-pathogen
+\end_layout
+
+\begin_layout Plain Layout
+
+" -- http://nvie.com/posts/how-i-boosted-my-vim
+\end_layout
+
+\begin_layout Plain Layout
+
+" -- http://github.com/derekwyatt/vim-config
+\end_layout
+
+\begin_layout Plain Layout
+
+" -- http://paulgorman.org/technical/dotfiles/vimrc.txt
+\end_layout
+
+\begin_layout Plain Layout
+
+" -- http://dotfiles.github.io/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{fancy}
+\backslash
+fancyfoot[LF]{
+\backslash
+vspace*{-0.8cm}
+\backslash
+rule{1
+\backslash
+linewidth}{0.5pt}
+\backslash
+
+\backslash
+
+\backslash
+begin{spacing}{0.6}{
+\backslash
+scriptsize{
+\backslash
+noindent{}This quick reference is mostly based on the first three chapters
+ of the excellent German introductory feature round-up book 
+\backslash
+emph{vim 7.3 GE-PACKT --- vi improved} by Reinhard Wobst (4th Edition 2012,
+ mitp-Verlag).
+ Feel free to send your suggestions, comments, and any kind of feedback
+ about this quick reference to xevfgbsQBGxnghfNGtznvyQBGpbz (``g?'''ed).
+ --- Kristóf Katus, 6 July 2013}}
+\backslash
+end{spacing}}
+\backslash
+fancyfoot[CF]{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch Hide
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing other 0.80000000000000004
+\noindent
+\align block
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size scriptsize
+This quick reference is mostly based on the first three chapters of the
+ excellent German introductory feature round-up book 
+\begin_inset Quotes eld
+\end_inset
+
+vim 7.3 GE-PACKT --- vi improved
+\begin_inset Quotes erd
+\end_inset
+
+ by Reinhard Wobst (4th Edition 2012, mitp-Verlag).
+ Feel free to send your suggestions, comments, and any kind of feedback
+ about this quick reference to xevfgbsQBGxnghfNGtznvyQBGpbz (
+\begin_inset Quotes eld
+\end_inset
+
+g?
+\begin_inset Quotes erd
+\end_inset
+
+'ed).
+ 25 June 2013
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+NOTES:
+\end_layout
+
+\begin_layout Plain Layout
+--- In case of normal commands: lowercase ==> uppercase: 
+\begin_inset Quotes eld
+\end_inset
+
+strengthens
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+counters/opposes
+\begin_inset Quotes erd
+\end_inset
+
+ the effect, e.g.
+ see 
+\begin_inset Quotes eld
+\end_inset
+
+c
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+C
+\begin_inset Quotes erd
+\end_inset
+
+ for change.
+ Or 
+\begin_inset Quotes eld
+\end_inset
+
+w
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+W
+\begin_inset Quotes erd
+\end_inset
+
+, or 
+\begin_inset Quotes eld
+\end_inset
+
+f
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+F
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Exceptions: 
+\begin_inset Quotes eld
+\end_inset
+
+dd
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+cc
+\begin_inset Quotes erd
+\end_inset
+
+.
+ See all commands with 
+\begin_inset Quotes eld
+\end_inset
+
+:h index
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+--- 
+\begin_inset Quotes eld
+\end_inset
+
+$ grep '^[1-9]+
+\backslash
+.' out.txt | vim -
+\begin_inset Quotes erd
+\end_inset
+
+ · stdin trick.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
